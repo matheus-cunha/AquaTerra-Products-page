@@ -1,0 +1,256 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: calibri, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 37, 37);
+}
+
+nav{
+    z-index: 10;
+    position: fixed;
+    background-color: rgb(192, 219, 219);
+    width: 100vw;
+    height: 4rem;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 5px #00000021;
+}
+
+.navwrapper{
+    width: 1100px;
+    display: flex;
+    flex-direction: row;    
+}
+
+.navimg{
+    background-image: url('../imgs/AquaterraLogoT.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+
+    width: 100%;
+    height: 3rem;
+}
+
+.navbtn{
+    color: rgb(0, 59, 59);
+    font-size: 1,1rem;
+    height: 3rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    border-radius: 15px;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .active{
+    background-color: rgb(183, 211, 211);
+    position: relative;
+}
+
+
+nav .active:hover{
+    height: 3rem;
+    background-color: rgb(183, 211, 211);
+    transform: translatez(0);
+    cursor: default;
+    box-shadow: none;
+}
+
+.navbtn:hover{
+    height: 2.5rem;
+    background-color: rgb(203, 233, 233);
+    transition: 0.8s;
+    transform: translatez(-15px);
+    box-shadow: 0px 3px 5px #00000021;
+}
+
+.navbtn:last-child{
+    margin: 0;
+}
+
+header{
+    z-index: 1;
+    position: relative;
+    padding-top: 3rem;
+    width: 100vw;
+    height: 30rem;
+    background-size: cover;
+    background-position: right center;
+    background-image: url(../imgs/HeaderImg.jpeg);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #001f2e;
+    background: linear-gradient(332deg,rgba(0, 31, 46, 0.849) 0%, rgba(127, 180, 184, 0.815) 100%); 
+    z-index: -1; 
+}
+
+.headerwrapper{
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-shadow: 0px 3px 5px #00000057;
+}
+
+.headerwrapper h1{
+    font-size: 1.6rem;
+}
+.headerwrapper h2{
+    font-size: 1.3rem;
+    font-weight: normal;
+    width: 28rem;
+    line-height: 3rem;
+}
+
+.bold{
+    font-size: 1.3rem;
+    margin-top: 1.3rem;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+main{
+    background-color: #cfdee28c;
+    width: 100vw;
+    /* height: 50rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-caroussel{
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
+}
+
+.main-caroussel--navigation{
+    width: 3rem;
+    flex: 1;
+    font-size: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-color: #001f2e; */
+}
+
+.main-caroussel .right{
+    margin-left: 1rem;
+    background-image: url('../imgs/Icons/angle-right-solid-full.svg');
+    /* content: '>'; */
+    /* margin-right: 1rem; */
+}
+
+.main-caroussel .left{
+    margin-right: 1rem;
+    background-image: url('../imgs/Icons/angle-left-solid-full.svg');
+    /* margin-left: 1rem; */
+    /* content: '<'; */
+}
+
+.main-caroussel--head{
+    justify-items: center;
+    font-size: 1.5rem;
+}
+
+.main-caroussel--head h3{
+    margin: 0 0 1.5rem 0;
+}
+
+.main-caroussel--body{
+    display: flex;
+    flex-direction: row;
+    /* flex-grow: 1; */
+}
+
+.main-caroussel--card{
+    display: flex;
+    flex: 5;
+    justify-content: center;
+    /* align-items: ; */
+}
+
+.card{
+    width: 270px;
+    border-radius: 30px;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 15px #0000002f;
+}
+
+.card-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.card-img{
+    width: 100%;
+    height: 15rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#card-img-01{
+    background-image: url('../imgs/Products/Aquaterra\ Elite\ 750\ .png');
+}
+
+#card-img-02{
+    background-image: url('../imgs/Products/AquaTerra\ Urban\ 500.png');
+}
+
+#card-img-03{
+    background-image: url('../imgs/Products/AquaTerra\ Adventure\ 1L.png');
+}
+
+
+.card-text{
+    text-align: center;
+    /* font-weight: bold; */
+    font-size: 1rem;
+    height: 6.5rem;
+}
+    
+.card-price{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+footer{
+    height: 30rem;
+    background-color: white;
+}
