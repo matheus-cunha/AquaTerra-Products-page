@@ -1,256 +1,297 @@
-body{
-    padding: 0;
-    margin: 0;
-    font-family: calibri, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(0, 37, 37);
+body {
+  padding: 0;
+  margin: 0;
+  font-family: calibri, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(0, 37, 37);
 }
 
-nav{
-    z-index: 10;
-    position: fixed;
-    background-color: rgb(192, 219, 219);
-    width: 100vw;
-    height: 4rem;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 3px 5px #00000021;
+nav {
+  z-index: 10;
+  position: fixed;
+  background-color: rgb(192, 219, 219);
+  width: 100vw;
+  height: 4rem;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 5px #00000021;
 }
 
-.navwrapper{
-    width: 1100px;
-    display: flex;
-    flex-direction: row;    
+.navwrapper {
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
 }
 
-.navimg{
-    background-image: url('../imgs/AquaterraLogoT.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: 0;
-
-    width: 100%;
-    height: 3rem;
+.navimg {
+  background-image: url("../imgs/AquaterraLogoT.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  width: 100%;
+  height: 3rem;
 }
 
-.navbtn{
-    color: rgb(0, 59, 59);
-    font-size: 1,1rem;
-    height: 3rem;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 0.5rem;
-    border-radius: 15px;
-    padding: 0 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbtn {
+  color: rgb(0, 59, 59);
+  font-size: 1, 1rem;
+  height: 3rem;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.5rem;
+  border-radius: 15px;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-nav .active{
-    background-color: rgb(183, 211, 211);
-    position: relative;
+nav .active {
+  background-color: rgb(183, 211, 211);
+  position: relative;
 }
 
-
-nav .active:hover{
-    height: 3rem;
-    background-color: rgb(183, 211, 211);
-    transform: translatez(0);
-    cursor: default;
-    box-shadow: none;
+nav .active:hover {
+  height: 3rem;
+  background-color: rgb(183, 211, 211);
+  transform: translatez(0);
+  cursor: default;
+  box-shadow: none;
 }
 
-.navbtn:hover{
-    height: 2.5rem;
-    background-color: rgb(203, 233, 233);
-    transition: 0.8s;
-    transform: translatez(-15px);
-    box-shadow: 0px 3px 5px #00000021;
+.navbtn:hover {
+  height: 2.5rem;
+  background-color: rgb(203, 233, 233);
+  transition: 0.8s;
+  transform: translatez(-15px);
+  box-shadow: 0px 3px 5px #00000021;
 }
 
-.navbtn:last-child{
-    margin: 0;
+.navbtn:last-child {
+  margin: 0;
 }
 
-header{
-    z-index: 1;
-    position: relative;
-    padding-top: 3rem;
-    width: 100vw;
-    height: 30rem;
-    background-size: cover;
-    background-position: right center;
-    background-image: url(../imgs/HeaderImg.jpeg);   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header {
+  z-index: 1;
+  position: relative;
+  padding-top: 3rem;
+  width: 100vw;
+  height: 30rem;
+  background-size: cover;
+  background-position: right center;
+  background-image: url(../imgs/HeaderImg.jpeg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #001f2e;
-    background: linear-gradient(332deg,rgba(0, 31, 46, 0.849) 0%, rgba(127, 180, 184, 0.815) 100%); 
-    z-index: -1; 
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #001f2e;
+  background: linear-gradient(
+    332deg,
+    rgba(0, 31, 46, 0.849) 0%,
+    rgba(127, 180, 184, 0.815) 100%
+  );
+  z-index: -1;
 }
 
-.headerwrapper{
-    width: 1100px;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    text-shadow: 0px 3px 5px #00000057;
+.headerwrapper {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-shadow: 0px 3px 5px #00000057;
 }
 
-.headerwrapper h1{
-    font-size: 1.6rem;
+.headerwrapper h1 {
+  font-size: 1.6rem;
 }
-.headerwrapper h2{
-    font-size: 1.3rem;
-    font-weight: normal;
-    width: 28rem;
-    line-height: 3rem;
-}
-
-.bold{
-    font-size: 1.3rem;
-    margin-top: 1.3rem;
-    font-weight: bolder;
+.headerwrapper h2 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  width: 28rem;
+  line-height: 3rem;
 }
 
-
-
-
-
-
-
-
-
-main{
-    background-color: #cfdee28c;
-    width: 100vw;
-    /* height: 50rem; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.bold {
+  font-size: 1.3rem;
+  margin-top: 1.3rem;
+  font-weight: bolder;
 }
 
-.main-caroussel{
-    width: 1100px;
-    display: flex;
-    flex-direction: column;
-    margin: 5rem 0;
+main {
+  background-color: #cfdee28c;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main-caroussel--navigation{
-    width: 3rem;
-    flex: 1;
-    font-size: 3rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    /* background-color: #001f2e; */
+.main-display {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
 }
 
-.main-caroussel .right{
-    margin-left: 1rem;
-    background-image: url('../imgs/Icons/angle-right-solid-full.svg');
-    /* content: '>'; */
-    /* margin-right: 1rem; */
+.main-display--head {
+  justify-items: center;
+  font-size: 1.5rem;
 }
 
-.main-caroussel .left{
-    margin-right: 1rem;
-    background-image: url('../imgs/Icons/angle-left-solid-full.svg');
-    /* margin-left: 1rem; */
-    /* content: '<'; */
+.main-display--head h3 {
+  margin: 0 0 1.5rem 0;
 }
 
-.main-caroussel--head{
-    justify-items: center;
-    font-size: 1.5rem;
+.main-display--row {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
 }
 
-.main-caroussel--head h3{
-    margin: 0 0 1.5rem 0;
+.main-display--card {
+  display: flex;
+  flex: 5;
+  justify-content: center;
 }
 
-.main-caroussel--body{
-    display: flex;
-    flex-direction: row;
-    /* flex-grow: 1; */
+.card {
+  width: 270px;
+  border-radius: 30px;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 15px #0000002f;
 }
 
-.main-caroussel--card{
-    display: flex;
-    flex: 5;
-    justify-content: center;
-    /* align-items: ; */
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
-.card{
-    width: 270px;
-    border-radius: 30px;
-    padding: 1rem;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 5px 15px #0000002f;
+.card-img {
+  width: 100%;
+  height: 15rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.card-title{
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.3rem;
+#card-img-01 {
+  background-image: url("../imgs/Products/Aquaterra\ Elite\ 750\ .png");
+}
+#card-img-02 {
+  background-image: url("../imgs/Products/AquaTerra\ Urban\ 500.png");
+}
+#card-img-03 {
+  background-image: url("../imgs/Products/AquaTerra\ Adventure\ 1L.png");
+}
+#card-img-04 {
+  background-image: url("../imgs/Products/AquaTerra\ Duo\ 600.png");
+}
+#card-img-05 {
+  background-image: url("../imgs/Products/AquaTerra\ Kids\ 400.png");
+}
+#card-img-06 {
+  background-image: url("../imgs/Products/AquaTerra\ FreshPack\ 12L..png");
 }
 
-.card-img{
-    width: 100%;
-    height: 15rem;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+.card-text {
+  text-align: center;
+  font-size: 1rem;
+  height: 6.5rem;
 }
 
-#card-img-01{
-    background-image: url('../imgs/Products/Aquaterra\ Elite\ 750\ .png');
+.card-price {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
-#card-img-02{
-    background-image: url('../imgs/Products/AquaTerra\ Urban\ 500.png');
+#ribbon {
+  font-size: 1.5;
+  padding: 3rem 0;
+  width: 100%;
+  background-color: rgb(0, 31, 46);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
 }
 
-#card-img-03{
-    background-image: url('../imgs/Products/AquaTerra\ Adventure\ 1L.png');
+#ribbon .btn {
+  color: white;
+  font-size: 1, 1rem;
+  width: 10rem;
+  left: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.5rem;
+  border-radius: 15px;
+  padding: 0.5rem 3rem;
+  display: flex;
+  position: absolute;
+  transform: translatex(-50%);
+  background-color: aqua;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.card-text{
-    text-align: center;
-    /* font-weight: bold; */
-    font-size: 1rem;
-    height: 6.5rem;
-}
-    
-.card-price{
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5rem;
+#ribbon p::before {
+  font-size: 50rem;
 }
 
+article {
+}
 
+.articlewrapper {
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  color: rgb(0, 59, 59);
+  padding: 4rem 0;
+  line-height: 3rem;
+}
 
+.article-col:first-child {
+  margin-right: 2rem;
+}
 
+.article-col {
+  flex: 1;
+  text-shadow: 0px 3px 5px #0000001e;
+  font-size: 1.3rem;
+}
 
-footer{
-    height: 30rem;
-    background-color: white;
+.article-image {
+  height: 30rem;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#article01 {
+  background-image: url(../imgs/Article01.jpg);
+}
+#article02 {
+  background-image: url(../imgs/Article02.jpg);
+}
+
+footer {
+  height: 15rem;
+  width: 100vw;
+  background-color: #001f2e;
 }
