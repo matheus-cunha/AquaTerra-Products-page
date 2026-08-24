@@ -6,12 +6,12 @@ body {
   flex-direction: column;
   align-items: center;
   color: rgb(0, 37, 37);
+  overflow-x: hidden;
 }
 
 nav {
   z-index: 10;
   position: fixed;
-  background-color: rgb(192, 219, 219);
   width: 100vw;
   height: 4rem;
   padding: 0;
@@ -19,7 +19,22 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
+}
+
+.nav-active{
+  color: white;
+  background-color: rgb(192, 219, 219);
   box-shadow: 0px 3px 5px #00000021;
+}
+
+.nav-active .navbtn {
+  color: rgb(0, 59, 59);
+}
+
+.nav-active .active {
+  background-color: rgb(183, 211, 211);
+  position: relative;
 }
 
 .navwrapper {
@@ -38,7 +53,7 @@ nav {
 }
 
 .navbtn {
-  color: rgb(0, 59, 59);
+  color: white; 
   font-size: 1, 1rem;
   height: 3rem;
   text-decoration: none;
@@ -52,13 +67,13 @@ nav {
 }
 
 nav .active {
-  background-color: rgb(183, 211, 211);
+  background-color: transparent;
   position: relative;
+  transition: 0.3s;
 }
 
 nav .active:hover {
-  height: 3rem;
-  background-color: rgb(183, 211, 211);
+  height: 3rem; 
   transform: translatez(0);
   cursor: default;
   box-shadow: none;
@@ -220,40 +235,74 @@ main {
 }
 
 #ribbon {
-  font-size: 1.5;
+  z-index: 2;
+  font-size: 1.3rem;
+  font-weight: bolder;
   padding: 3rem 0;
-  width: 100%;
+  width: 100vw;
   background-color: rgb(0, 31, 46);
   display: flex;
   flex-direction: column;
   color: white;
   justify-content: center;
   align-items: center;
+  background-image: url(../imgs/Ribbon.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-#ribbon .btn {
+#ribbon::before {
+  z-index: 3;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #001f2e;
+  background: linear-gradient(
+    332deg,
+    rgba(0, 31, 46, 0.849) 0%,
+    rgba(127, 180, 184, 0.815) 100%
+  );
+}
+
+#ribbon .btn{
+  background-color: rgba(192, 219, 219, 0.192);
   color: white;
-  font-size: 1, 1rem;
+  z-index: 5;
+  font-size: 1.1rem;
   width: 10rem;
-  left: 50%;
   text-decoration: none;
   font-weight: bold;
   margin: 0 0.5rem;
   border-radius: 15px;
   padding: 0.5rem 3rem;
   display: flex;
-  position: absolute;
-  transform: translatex(-50%);
-  background-color: aqua;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
 }
 
-#ribbon p::before {
-  font-size: 50rem;
+#ribbon .btn:hover{
+  background-color: rgb(203, 233, 233);
+  color: rgb(0, 37, 37);
 }
 
-article {
+#ribbon p {
+  font-weight:lighter;
+  font-size: 1.1rem;
+}
+
+#ribbon div {
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .articlewrapper {
@@ -261,7 +310,7 @@ article {
   display: flex;
   flex-direction: row;
   color: rgb(0, 59, 59);
-  padding: 4rem 0;
+  padding: 2rem 0 0 0;
   line-height: 3rem;
 }
 
@@ -273,6 +322,10 @@ article {
   flex: 1;
   text-shadow: 0px 3px 5px #0000001e;
   font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .article-image {
@@ -283,15 +336,42 @@ article {
   background-repeat: no-repeat;
 }
 
-#article01 {
+#img-article01 {
   background-image: url(../imgs/Article01.jpg);
 }
-#article02 {
+#img-article02 {
   background-image: url(../imgs/Article02.jpg);
 }
 
+#article02{
+  text-align: right;
+}
+
 footer {
-  height: 15rem;
+  padding: 1rem 0;
   width: 100vw;
   background-color: #001f2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
+
+.footer-col:first-child {
+  text-align: right;
+}
+
+.footer-col{
+  margin: 0 1rem;
+  line-height: 1.5rem;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer-col--title{
+  font-weight: bolder;
+  margin-bottom: 0.3rem;
+} 

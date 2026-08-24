@@ -8,7 +8,7 @@
     <title>AquaTerra - Soluções Térmicas Premium</title>
   </head>
   <body>
-    <nav>
+    <nav id="nav">
         <div class="navwrapper">
             <div class="navimg"></div>
             <a class="navbtn active" href="./index.html"> Início </a>
@@ -105,30 +105,75 @@
       </div>
     </main>
     <section id="ribbon">
-        Garanta a sua AquaTerra antes que acabe! 
-        <p>O isolamento térmico de alta performance que acompanha seu ritmo. Reserve agora com condições exclusivas de pré-venda.
-        <a href="" class="btn">Faça sua reserva!</a>
+        <div>
+          Garanta a sua AquaTerra antes que acabe! 
+          <p>O isolamento térmico de alta performance que acompanha seu ritmo. Reserve agora com condições exclusivas de pré-venda.</p>
+          <a href="" class="btn">Faça sua reserva!</a>
+        </div>
     </section>
     <article>
-        <section class="articlewrapper">
+        <section class="articlewrapper" id="article01">
             <div class="article-col">
-                A AquaTerra representa o ápice da conservação térmica, projetada para atender aos mais altos padrões de desempenho e durabilidade. Seu sistema de parede dupla em aço inoxidável 18/8, aliado ao isolamento a vácuo e ao revestimento interno em cobre, garante a manutenção rigorosa da temperatura. A estrutura conta com tecnologia anticondensação e vedação de alta precisão contra vazamentos. Confeccionada com materiais atóxicos e livres de BPA, ela preserva a pureza original da bebida, consolidando-se como uma solução sofisticada e de elevada eficiência funcional.
+                A AquaTerra representa o ápice da conservação térmica.
+                Seu sistema de parede dupla em aço inoxidável 18/8, 
+                aliado ao isolamento a vácuo e ao revestimento interno em cobre, 
+                garante a manutenção rigorosa da temperatura. 
+                A estrutura conta com tecnologia anticondensação e vedação de alta precisão 
+                contra vazamentos. 
             </div>
             <div class="article-col">
-                <div class="article-image" id="article01"></div>
+                <div class="article-image" id="img-article01"></div>
             </div>
         </section>
-        <section class="articlewrapper">
+        <section class="articlewrapper" id="article02">
             <div class="article-col">
-                <div class="article-image" id="article02"></div>
+                <div class="article-image" id="img-article02"></div>
             </div>
             <div class="article-col">
-                A tecnologia da AquaTerra baseia-se em um sistema de isolamento multicamadas de alta precisão. Sua estrutura é moldada em aço inoxidável 18/8 de grau alimentício, composta por duas paredes metálicas separadas por uma câmara de vácuo absoluto, o que impede a condução e a convecção do calor. Adicionalmente, a parede interna conta com uma camada de revestimento em cobre que reflete a radiação térmica, potencializando a retenção da temperatura. Esse conjunto tecnológico evita a transferência de calor com o ambiente externo, elimina a condensação na superfície e garante estanqueidade total através de uma vedação hermética.
+                A tecnologia da AquaTerra baseia-se em um sistema de isolamento 
+                multicamadas de alta precisão. Adicionalmente, a 
+                parede interna conta com uma camada de revestimento em cobre 
+                que reflete a radiação térmica, potencializando a retenção da 
+                temperatura. 
+                O que evita a transferência de calor com o ambiente externo, 
+                e garante estanqueidade total através de uma vedação hermética.
             </div>
         </section>
     </article>
     <footer>
-        Teste
+        <div class="footer-col">
+          <div class="footer-col--title">Navegação:</div>
+          <div class="">
+            <a href="">Início</a>
+          </div>
+          <div class="">
+            <a href="">Contato</a>
+          </div>
+          <div class="">
+            <a href="">Sobre</a>
+          </div>
+        </div>  
+        <div class="footer-col">
+          <div class="footer-col--title">Contatos:</div>
+          <div class="">contato@aquaterra.com.br</div>
+          <div class="">(12) 3578-8555</div>
+          <div class="">(12) 3908-8586</div>
+        </div>  
     </footer>
   </body>
+  <script>
+    function navEffectsOnScroll() {
+      const nav = document.querySelector("#nav");
+      const navHeight = nav.offsetHeight;
+      if (window.scrollY >= navHeight) {
+        nav.classList.add("nav-active");
+      } else {
+        nav.classList.remove("nav-active");
+      }
+    }
+
+    window.addEventListener("scroll", function () {
+      navEffectsOnScroll();
+    });
+  </script>
 </html>
