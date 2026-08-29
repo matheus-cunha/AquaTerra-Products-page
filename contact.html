@@ -8,67 +8,38 @@
     <title>AquaTerra - Soluções Térmicas Premium</title>
   </head>
   <body>
-    <nav>
+    <nav id="nav">
       <div class="navwrapper">
         <div class="navimg"></div>
-        <a class="navbtn" href="./index.html"> Início </a>
-        <a class="navbtn active" href="./contact.html"> Contato </a>
+        <a class="navbtn active" href="./index.html"> Início </a>
+        <a class="navbtn" href="./contact.html"> Contato </a>
         <a class="navbtn" href="./about.html"> Sobre </a>
       </div>
     </nav>
 
-
-    Fale conosco 
-
-    Envie sua mensagem 
-    Email 
-    Assunto 
-    Descrição 
-
-
-    Outros Canais 
-    Email 
-    Telefone 
-    Endereço 
-
-    Mapa 
-    Incorporar Mapa talvez
-    
+    Fale conosco Envie sua mensagem Email Assunto Descrição Outros Canais Email
+    Telefone Endereço Mapa Incorporar Mapa talvez
 
     <footer>
-        <div class="footer-col">
-          <div class="footer-col--title">Navegação:</div>
-          <div class="">
-            <a href="">Início</a>
-          </div>
-          <div class="">
-            <a href="">Contato</a>
-          </div>
-          <div class="">
-            <a href="">Sobre</a>
-          </div>
-        </div>  
-        <div class="footer-col">
-          <div class="footer-col--title">Contatos:</div>
-          <div class="">contato@aquaterra.com.br</div>
-          <div class="">(12) 3578-8555</div>
-          <div class="">(12) 3908-8586</div>
-        </div>  
+      <div class="footer-col">
+        <div class="footer-col--title">Navegação:</div>
+        <div class="">
+          <a href="">Início</a>
+        </div>
+        <div class="">
+          <a href="">Contato</a>
+        </div>
+        <div class="">
+          <a href="">Sobre</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col--title">Contatos:</div>
+        <div class="">contato@aquaterra.com.br</div>
+        <div class="">(12) 3578-8555</div>
+        <div class="">(12) 3908-8586</div>
+      </div>
     </footer>
   </body>
-  <script>
-    function navEffectsOnScroll() {
-      const nav = document.querySelector("#nav");
-      const navHeight = nav.offsetHeight;
-      if (window.scrollY >= navHeight) {
-        nav.classList.add("nav-active");
-      } else {
-        nav.classList.remove("nav-active");
-      }
-    }
-
-    window.addEventListener("scroll", function () {
-      navEffectsOnScroll();
-    });
-  </script>
+  <script src="./js/scripts.js" defer></script>
 </html>
