@@ -1,0 +1,185 @@
+header {
+  z-index: 1;
+  position: relative;
+  padding-top: 3rem;
+  width: 100vw;
+  height: 30rem;
+  background-size: cover;
+  background-position: right center;
+  background-image: url(../imgs/HeaderImg.jpeg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #001f2e;
+  background: linear-gradient(
+    332deg,
+    rgba(0, 31, 46, 0.849) 0%,
+    rgba(127, 180, 184, 0.815) 100%
+  );
+  z-index: -1;
+}
+
+.headerwrapper {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-shadow: 0px 3px 5px #00000057;
+}
+
+.headerwrapper h1 {
+  font-size: 1.6rem;
+}
+
+.headerwrapper h2 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  width: 28rem;
+  line-height: 3rem;
+}
+
+.bold {
+  font-size: 1.3rem;
+  margin-top: 1.3rem;
+  font-weight: bolder;
+}
+
+main {
+  background-color: #cfdee28c;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-display {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+}
+
+.main-display--head {
+  justify-items: center;
+  font-size: 1.5rem;
+}
+
+.main-display--head h3 {
+  margin: 0 0 1.5rem 0;
+}
+
+.main-display--row {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+}
+
+.main-display--card {
+  display: flex;
+  flex: 5;
+  justify-content: center;
+}
+
+.card {
+  width: 270px;
+  border-radius: 30px;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 15px #0000002f;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.card-img {
+  width: 100%;
+  height: 15rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#card-img-01 {
+  background-image: url("../imgs/Products/Aquaterra\ Elite\ 750\ .png");
+}
+#card-img-02 {
+  background-image: url("../imgs/Products/AquaTerra\ Urban\ 500.png");
+}
+#card-img-03 {
+  background-image: url("../imgs/Products/AquaTerra\ Adventure\ 1L.png");
+}
+#card-img-04 {
+  background-image: url("../imgs/Products/AquaTerra\ Duo\ 600.png");
+}
+#card-img-05 {
+  background-image: url("../imgs/Products/AquaTerra\ Kids\ 400.png");
+}
+#card-img-06 {
+  background-image: url("../imgs/Products/AquaTerra\ FreshPack\ 12L..png");
+}
+
+.card-text {
+  text-align: center;
+  font-size: 1rem;
+  height: 6.5rem;
+}
+
+.card-price {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.articlewrapper {
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  color: rgb(0, 59, 59);
+  padding: 2rem 0 0 0;
+  line-height: 3rem;
+}
+
+.article-col:first-child {
+  margin-right: 2rem;
+}
+
+.article-col {
+  flex: 1;
+  text-shadow: 0px 3px 5px #0000001e;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-image {
+  height: 30rem;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#img-article01 {
+  background-image: url(../imgs/Article01.jpg);
+}
+#img-article02 {
+  background-image: url(../imgs/Article02.jpg);
+}
+
+#article02{
+  text-align: right;
+}
