@@ -54,7 +54,8 @@ header::before {
 }
 
 main {
-  background-color: #cfdee28c;
+  background: #ffffff;
+  background: linear-gradient(144deg,rgba(255, 255, 255, 1) 0%, rgb(220, 247, 255) 100%);
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -93,7 +94,9 @@ main {
   width: 270px;
   border-radius: 30px;
   padding: 1rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.274); 
+  border: #b3b3b363;
+  border-style: solid;
   box-shadow: 0px 5px 15px #0000002f;
 }
 
@@ -183,3 +186,77 @@ main {
 #article02{
   text-align: right;
 }
+
+
+
+
+
+@media screen and (max-width: 1200px){
+  header {
+    height: 28rem;
+  }
+
+  .headerwrapper {
+    width: 900px;
+  }
+
+  .headerwrapper h1 {
+    font-size: 1.4rem;
+  }
+
+  .headerwrapper h2 {
+    font-size: 1.1rem;
+    width: 28rem;
+    line-height: 2,8rem;
+  }
+
+  .bold {
+    font-size: 1.1rem;
+  }
+
+  .main-display {
+    width: 900px;
+  }
+
+  .main-display--head {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    width: 230px;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-img {
+    height: 13rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    height: 6.5rem;
+  }
+
+  .card-price {
+    font-size: 1.4rem;
+  }
+
+  .articlewrapper {
+    width: 900px;
+    line-height: 2.5rem;
+  }
+
+  .article-col {
+    font-size: 1.1rem;
+  }
+
+  .article-image {
+    height: 25rem;
+  }  
+}
+
+
+
+/* @media screen and (max-width: 1000px){} */

@@ -1,6 +1,5 @@
 section{
     width: 1100px;
-    /* background-color: aqua;    */
     font-size: 1.3rem;
     text-align: center;
     display: flex;
@@ -33,3 +32,49 @@ h2 , h4{
     margin: 1.5rem 0 3rem 0;
 } 
 
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    section{
+        width: 900px;
+        font-size: 1.1rem;
+    }
+
+    h1 , h3{
+        font-size: 1.4rem;
+    }
+
+    h2 , h4{
+        font-size: 1.1rem;
+        /* margin: 1.5rem 0; */
+    }
+
+    .team-photo{
+        width: 30rem;
+        height: 18rem;
+    } 
+}
+
+
+@media screen and (max-width: 950px){
+    section{
+        width: 650px;
+        font-size: 1rem;
+    }
+
+    h1 , h3{
+        font-size: 1.2rem;
+    }
+
+    h2 , h4{
+        font-size: 1rem;
+    }
+
+    .team-photo{
+        width: 25rem;
+        height: 15rem;
+    } 
+}
