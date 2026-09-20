@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon" />
     <title>AquaTerra - Soluções Térmicas Premium</title>
   </head>
@@ -12,13 +13,38 @@
     <nav id="nav">
         <div class="navwrapper">
             <div class="navimg"></div>
-            <a class="navbtn active" href="./index.html"> Início </a>
-            <a class="navbtn" href="./contact.html"> Contato </a>
-            <a class="navbtn" href="./about.html"> Sobre </a>
+            
+            <button class="navbar-toggler" id="navbarToggler"> 
+              <span>
+                <!-- <a class="" href="./index.html"> Início EX </a> -->
+              </span> 
+              <span>
+                <!-- <a class="" href="./contact.html"> Contato EX</a> -->
+              </span> 
+              <span>
+                <!-- <a class="" href="./about.html"> SobreEX </a> -->
+              </span> 
+            </button>
+            
+            <div class="navbar-collapse flex" id="navbarCollapse">
+              <ul class="flex">
+                <li>
+                  <a class="navbtn active" href="./index.html"> Início </a>
+                </li>
+                <li>
+                  <a class="navbtn" href="./contact.html"> Contato</a>
+              </li>
+                <li>
+                  <a class="navbtn" href="./about.html"> Sobre</a>
+              </li>
+              </ul>
+            </div>
+
+
         </div>
     </nav>
-    <header>
-      <div class="headerwrapper">
+    <header class="flex justify-center items-center">
+      <div class="headerwrapper flex justify-center">
         <h1>AquaTerra - Soluções Térmicas Premium</h1>
         <h2>
           Na AquaTerra, você encontra garrafas térmicas premium que unem design,
@@ -30,7 +56,7 @@
         </h2>
       </div>
     </header>
-    <main>
+    <main class="flex justify-center items-center">
       <div class="main-display">
         <div class="main-display--head">
           <h3>Confira alguns de nossos produtos!</h3>
@@ -42,8 +68,7 @@
               <div class="card-img" id="card-img-01"></div>
               <div class="card-text">
                 A garrafa premium para quem busca desempenho e elegância. Mantém
-                bebidas quentes ou geladas por horas, com acabamento sofisticado
-                e design minimalista.
+                bebidas quentes ou geladas por horas.
               </div>
               <div class="card-price">R$149,90</div>
             </div>
@@ -64,9 +89,8 @@
               <div class="card-title">AquaTerra Adventure 1L</div>
               <div class="card-img" id="card-img-03"></div>
               <div class="card-text">
-                Feita para acompanhar grandes jornadas. Maior capacidade,
-                construção resistente e isolamento térmico para trilhas, viagens
-                e aventuras.
+                Maior capacidade, construção resistente e isolamento térmico para trilhas, 
+                viagens e aventuras.
               </div>
               <div class="card-price">R$169,90</div>
             </div>
@@ -98,7 +122,7 @@
                 <div class="card-title">AquaTerra FreshPack 12L</div>
                 <div class="card-img" id="card-img-06"></div>
                 <div class="card-text">
-                    A lancheira térmica AquaTerra FreshPack 12L combina espaço, praticidade e isolamento térmico para manter suas refeições e bebidas frescas por mais tempo. Ideal para todas as ocasiões.
+                    A lancheirade 12 litros combina espaço, praticidade para manter suas refeições e bebidas frescas por mais tempo.
                 </div>
                 <div class="card-price">R$159,90</div>
               </div>
@@ -109,7 +133,7 @@
         <div>
           Garanta a sua AquaTerra antes que acabe! 
           <p>O isolamento térmico de alta performance que acompanha seu ritmo. Reserve agora com condições exclusivas de pré-venda.</p>
-          <a href="" class="btn">Faça sua reserva!</a>
+          <a href="contact.html" class="btn">Faça sua reserva!</a>
         </div>
     </section>
     <article>
@@ -162,5 +186,5 @@
         </div>  
     </footer>
   </body>
-  <script src="./js/scripts.js" defer></script>
+  <script src="./js/scripts.js"></script>
 </html>

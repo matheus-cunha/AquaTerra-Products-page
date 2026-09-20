@@ -11,3 +11,11 @@ function navEffectsOnScroll() {
 window.addEventListener("scroll", function () {
   navEffectsOnScroll();
 });
+
+const button = document.getElementById("navbarToggler"); 
+const menu = document.getElementById("navbarCollapse"); 
+button.addEventListener(
+  "click", function () { 
+    menu.classList.toggle("show"); 
+  }
+);

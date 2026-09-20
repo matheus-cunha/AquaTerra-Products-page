@@ -1,5 +1,6 @@
 body {
   padding: 0;
+  width: 100vw;
   margin: 0;
   font-family: calibri, Helvetica, sans-serif;
   display: flex;
@@ -8,6 +9,50 @@ body {
   color: rgb(0, 37, 37);
   overflow-x: hidden;
 }
+
+
+
+
+
+.navbar-toggler { 
+  display: none; 
+  background: transparent; 
+  border: 1px solid rgb(0, 37, 37);
+  border-radius: 5px; 
+  padding: 8px 10px; 
+  cursor: pointer; 
+} 
+
+.navbar-toggler span { 
+  display: block; 
+  width: 25px; 
+  height: 3px; 
+  background-color: rgb(0, 37, 37); 
+  margin: 4px 0; 
+}
+
+.navbar-collapse { 
+  display: flex; 
+} 
+
+.navbar-nav { 
+  display: flex; 
+  list-style: none; 
+  gap: 25px; 
+} 
+
+.navbar-nav a { 
+  color: rgb(0, 37, 37);
+  text-decoration: none; 
+} 
+
+.navbar-nav a:hover { 
+  color: #0d6efd; 
+}
+
+
+
+
 
 nav {
   z-index: 10;
@@ -41,7 +86,10 @@ nav {
   width: 1100px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .navimg {
   background-image: url("../imgs/AquaterraLogoT.png");
@@ -133,10 +181,10 @@ nav .active:hover {
   color: white;
   z-index: 5;
   font-size: 1.1rem;
-  width: 10rem;
+  width: 15rem;
   text-decoration: none;
   font-weight: bold;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
   border-radius: 15px;
   padding: 0.5rem 3rem;
   display: flex;
@@ -232,106 +280,34 @@ footer a{
     align-items: center;
   }
 
-  /*
-
-
-  nav .active {
-    background-color: transparent;
-    position: relative;
-    transition: 0.3s;
+  footer{
+    margin-top: 1rem;
   }
-
-  nav .active:hover {
-    height: 3rem; 
-    transform: translatez(0);
-    cursor: default;
-    box-shadow: none;
-  }
-
-  .navbtn:hover {
-    height: 2.5rem;
-    background-color: rgb(203, 233, 233);
-    transition: 0.8s;
-    transform: translatez(-15px);
-    box-shadow: 0px 3px 5px #00000021;
-  }
-
-  .navbtn:last-child {
-    margin: 0;
-  }
-
 
   #ribbon {
-    z-index: 2;
-    font-size: 1.3rem;
-    font-weight: bolder;
-    padding: 3rem 0;
-    width: 100vw;
-    background-color: rgb(0, 31, 46);
-    display: flex;
-    flex-direction: column;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../imgs/Ribbon.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: relative;
-  }
-
-  #ribbon::before {
-    z-index: 3;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #001f2e;
-    background: linear-gradient(
-      332deg,
-      rgba(0, 31, 46, 0.849) 0%,
-      rgba(127, 180, 184, 0.815) 100%
-    );
-  }
-
-  #ribbon .btn{
-    background-color: rgba(192, 219, 219, 0.192);
-    color: white;
-    z-index: 5;
-    font-size: 1.1rem;
-    width: 10rem;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 0.5rem;
-    border-radius: 15px;
-    padding: 0.5rem 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-  }
-
-  #ribbon .btn:hover{
-    background-color: rgb(203, 233, 233);
-    color: rgb(0, 37, 37);
+    font-size: 1rem;
+    /* padding: 3rem 0; */
+    /* width: 100vw; */
   }
 
   #ribbon p {
     font-weight:lighter;
-    font-size: 1.1rem;
+    text-align: center;
+    font-size: 1rem;
+    width: 650px;
+    margin-bottom: 1rem;
   }
 
-  #ribbon div {
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  #ribbon .btn{
+    font-size: 1rem;
+    width: 15rem;
   }
 
+  footer {
+    font-size: 1rem;
+  }
+
+  /*
   footer {
     padding: 1rem 0;
     width: 100vw;
@@ -351,24 +327,97 @@ footer a{
     line-height: 1.5rem;
   }
 
-  footer a{
-    text-decoration: none;
-    color: white;
-  }
-
   .footer-col--title{
     font-weight: bolder;
     margin-bottom: 0.3rem;
   }  */
 }
 
-@media screen and (max-width: 660px){}
+@media screen and (max-width: 670px){
+.navbar-toggler { 
+  display: block;
+  /* width: 100%; */
+} 
+
+
+/* .navbar-toggler span{ 
+  display: none; 
+}  */
+  
+.navbar-toggler a{
+  display: none;
+} 
+
+.navbar-collapse { 
+  display: none; 
+  width: 100%; 
+  margin-top: 15px; 
+}
+
+.navbar-collapse.show{ 
+  display: flex;
+  flex-direction: column; 
+  width: 100vw; 
+  /* background-color: rgb(183, 211, 211); */
+  margin-top: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbtn {
+  font-size: .8rem;
+  height: 2rem;
+  margin: 0 0rem;
+  padding: 0 2.25rem;
+  /* height: 4rem; */
+}
+
+/* <div class="navbar-collapse flex" id="navbarCollapse">
+<ul class="flex">
+  <li>
+    <a class="navbtn active" href="./index.html"> Início </a>
+  </li>
+  <li>
+    <a class="navbtn" href="./contact.html"> Contato</a>
+</li>
+  <li>
+    <a class="navbtn" href="./about.html"> Sobre</a>
+</li>
+</ul>
+</div> */
+
+
+.navbar-nav { 
+  flex-direction: column; 
+  gap: 0; 
+} 
 
 
 
 
 
+.navbar-nav li { 
+  padding: 12px 0; 
+  border-top: 1px solid #444; 
+}
 
-/* @media screen and (max-width: 1800px){}
-@media screen and (max-width: 1200px){}
-@media screen and (max-width: 1000px){} */
+
+#ribbon p {
+  font-size: 1rem;
+  width: 350px;
+  margin-bottom: 0.5rem;
+}
+
+.navwrapper {
+  width: 350px;
+}
+
+
+#ribbon .btn{
+  font-size: 1rem;
+  width: 15rem;
+  padding: 0.2rem 2rem;
+}
+
+}
+
