@@ -5,7 +5,7 @@
 
 > Projeto criado utilizando CSS3 e HTML.
 
-> Prévia hospedada em https://matheus-cunha.github.io/AquaTerra-Products-page/about.html
+> Prévia hospedada em https://matheus-cunha.github.io/AquaTerra-Products-page/index.html
 
 ---
 
