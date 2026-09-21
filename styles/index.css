@@ -182,7 +182,6 @@ main {
   text-align: right;
 }
 
-
 @media screen and (max-width: 1200px){
   header {
     height: 28rem;
@@ -261,19 +260,15 @@ main {
   .headerwrapper h1 {
     font-size: 1.2rem;
     font-weight: bold;
-    /* font-size: 98%; */
   }
 
   .headerwrapper h2 {
     font-size: 1rem;
-    /* font-size: 95%; */
-    /* width: 28rem; */
     line-height: 2.2rem;
   }
 
   .bold {
     font-size: 1rem;
-    /* font-size: 95%; */
   }
 
   .main-display {
@@ -283,7 +278,6 @@ main {
   .main-display--head {
     font-size: 1.2rem;
     font-weight: bold;
-    /* font-size: 100%; */
   }
 
   .card {
@@ -300,7 +294,6 @@ main {
 
   .card-text {
     font-size: 0.9rem;
-    /* height: 6.5rem; */
   }
 
   .card-price {
@@ -319,7 +312,6 @@ main {
   .article-image {
     height: 23rem;
   }  
-  /* width: 650px; */
 }
 
 
@@ -334,7 +326,6 @@ main {
 
   .headerwrapper h1 {
     font-size: 1.1rem;
-    /* font-size: 98%; */
   }
 
   .headerwrapper h2 {
@@ -408,7 +399,6 @@ main {
 
   .headerwrapper h1 {
     font-size: 95%;
-    /* font-size: 98%; */
   }
 
   .headerwrapper h2 {
@@ -425,53 +415,4 @@ main {
     width: 80vw;
     font-size: 1.1rem;
   }
-
-  /* .main-display--row {
-    flex-wrap: wrap;
-    margin: 0 0;
-  }
-
-  .card {
-    width: 80vw;
-    margin: 1rem 0;
-  }
-
-  .card-title {
-    font-size: 1.1rem;
-  }
-
-  .card-img {
-    height: 11rem;
-  }
-
-  .card-text {
-    font-size: 1rem;
-    height: auto;
-  }
-
-  .card-price {
-    margin-top: 0.8rem;
-    font-size: 1.2rem;
-  }
-
-  .articlewrapper {
-    width: 350px;
-    gap: 0;
-    min-width: 350px;
-    flex-direction: column;
-    line-height: 2.3rem;
-  }
-
-  .article-image {
-    height: 18rem;
-  }  
-
-  .article-col{
-    width: 350px;
-    text-align: center;
-  }
-
-  #article02{
-    flex-direction: column-reverse;
-  } */
 }

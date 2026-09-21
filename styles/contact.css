@@ -1,5 +1,6 @@
 .formwrapper {
-  width: 100%;
+  width: 100vw;
+  height: calc(100vh - 96px - 132.8px);
   padding: 5rem 0;
   display: flex;
   justify-content: center;
@@ -96,5 +97,58 @@ iframe{
   iframe{
     height: 22rem;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .formwrapper {
+    padding: 5rem 0;
+  }
+
+  .form-body {
+    width: 650px;
+    gap: 3rem;
+  }
+
+  form {
+    font-size: 1rem;
+  }
+
+  .form-col .title{
+    font-size: 1.1em;
+  }
+
+  form input{
+    line-height: 1.1rem;
+  }
+
+  #formDescription{
+    height: 3rem;
+  }
+
+  iframe{
+    height: 21rem;
+  }
+}
+
+@media screen and (max-width: 670px){
+  .formwrapper {
+    padding: 3rem 0;
+    height: auto;
+  }
+
+  .form-body {
+    width: 350px;
+    gap: 5rem;
+    flex-direction: column;
+  }
+
+
+  #formDescription{
+    height: 10rem;
+  }
+
+  iframe{
+    height: 21rem;
   }
 }

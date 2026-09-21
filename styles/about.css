@@ -1,3 +1,7 @@
+#ribbon{
+    margin-bottom: 1.5rem;
+}
+
 section{
     width: 1100px;
     font-size: 1.3rem;
@@ -32,12 +36,11 @@ h2 , h4{
     margin: 1.5rem 0 3rem 0;
 } 
 
-
-
-
-
-
 @media screen and (max-width: 1200px){
+    #ribbon{
+        margin-bottom: 1.5rem;
+    }
+
     section{
         width: 900px;
         font-size: 1.1rem;
@@ -49,7 +52,6 @@ h2 , h4{
 
     h2 , h4{
         font-size: 1.1rem;
-        /* margin: 1.5rem 0; */
     }
 
     .team-photo{
@@ -58,8 +60,11 @@ h2 , h4{
     } 
 }
 
-
 @media screen and (max-width: 950px){
+    #ribbon{
+        margin-bottom: 1.5rem;
+    }
+
     section{
         width: 650px;
         font-size: 1rem;
@@ -75,6 +80,30 @@ h2 , h4{
 
     .team-photo{
         width: 25rem;
+        height: 15rem;
+    } 
+}
+
+@media screen and (max-width: 670px){    
+    #ribbon{
+        margin-bottom: 1.5rem;
+    }
+
+    section{
+        width: 350px;
+        font-size: 1rem;
+    }
+
+    h1 , h3{
+        font-size: 1.1rem;
+    }
+
+    h2 , h4{
+        font-size: 1rem;
+    }
+
+    .team-photo{
+        width: 350px;
         height: 15rem;
     } 
 }

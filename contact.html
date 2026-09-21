@@ -5,24 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/contact.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon" />
     <title>AquaTerra - Soluções Térmicas Premium</title>
   </head>
   <body>
     <nav id="nav">
       <div class="navwrapper">
-        <div class="navimg"></div>
-        <a class="navbtn" href="./index.html"> Início </a>
-        <a class="navbtn active" href="./contact.html"> Contato </a>
-        <a class="navbtn" href="./about.html"> Sobre </a>
+          <div class="navimg"></div>
+          <button class="navbar-toggler" id="navbarToggler"> 
+            <span></span> 
+            <span></span> 
+            <span></span> 
+          </button>
+          <div class="navbar-collapse flex" id="navbarCollapse">
+            <ul class="flex">
+              <li>
+                <a class="navbtn" href="./index.html"> Início </a>
+              </li>
+              <li>
+                <a class="navbtn active" href="./contact.html"> Contato</a>
+            </li>
+              <li>
+                <a class="navbtn" href="./about.html"> Sobre</a>
+            </li>
+            </ul>
+          </div>
       </div>
     </nav>
-    <section id="ribbon">
-      <!-- <div>
-        Fale conosco:
-        <p>Envie sua mensagem!</p>
-      </div> -->
-    </section>
+    <section id="ribbon"></section>
     <section class="formwrapper">
       <div class="form-body">
         <div class="form-col">
@@ -54,13 +65,13 @@
       <div class="footer-col">
         <div class="footer-col--title">Navegação:</div>
         <div class="">
-          <a href="">Início</a>
+          <a href="./index.html">Início</a>
         </div>
         <div class="">
-          <a href="">Contato</a>
+          <a href="./contact.html">Contato</a>
         </div>
         <div class="">
-          <a href="">Sobre</a>
+          <a href="./about.html">Sobre</a>
         </div>
       </div>
       <div class="footer-col">
