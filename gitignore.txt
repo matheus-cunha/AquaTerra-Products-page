@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribuição / Pacotes
+desktop.ini
+dist/
+build/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+
+# Ambientes Virtuais (Virtual Environments)
+venv/
+.venv/
+env/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Arquivos de Configuração / Segredos (NUNCA envie para o GitHub)
+.env
+.flaskenv
+instance/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Banco de dados local (se usar SQLite)
+*.db
+*.sqlite3
+
+# IDEs e Editores de Código
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp

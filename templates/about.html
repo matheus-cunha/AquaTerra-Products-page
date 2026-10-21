@@ -3,36 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="../static/styles/global.css" />
+    <link rel="stylesheet" href="../static/styles/about.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon" />
     <title>AquaTerra - Soluções Térmicas Premium</title>
   </head>
   <body>
-    <nav id="nav">
-      <div class="navwrapper">
-          <div class="navimg"></div>
-          <button class="navbar-toggler" id="navbarToggler"> 
-            <span></span> 
-            <span></span> 
-            <span></span> 
-          </button>
-          <div class="navbar-collapse flex" id="navbarCollapse">
-            <ul class="flex">
-              <li>
-                <a class="navbtn" href="./index.html"> Início </a>
-              </li>
-              <li>
-                <a class="navbtn" href="./contact.html"> Contato</a>
-            </li>
-              <li>
-                <a class="navbtn active" href="./about.html"> Sobre</a>
-            </li>
-            </ul>
-          </div>
-      </div>
-    </nav>
+    {% extends "base.html" %}
+    {% block main %}    
+
     <section id="ribbon">
     </section>
     <section>
@@ -61,26 +41,8 @@
       </h4>
       <div class="team-photo"></div>
     </section>
-    <footer>
-      <div class="footer-col">
-        <div class="footer-col--title">Navegação:</div>
-        <div class="">
-          <a href="./index.html">Início</a>
-        </div>
-        <div class="">
-          <a href="./contact.html">Contato</a>
-        </div>
-        <div class="">
-          <a href="./about.html">Sobre</a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <div class="footer-col--title">Contatos:</div>
-        <div class="">contato@aquaterra.com.br</div>
-        <div class="">(12) 3578-8555</div>
-        <div class="">(12) 3908-8586</div>
-      </div>
-    </footer>
+    
+    {% endblock %}
   </body>
-  <script src="./js/scripts.js" defer></script>
+  <script src="../static/js/scripts.js" defer></script>
 </html>

@@ -24,7 +24,7 @@ h2 , h4{
 
 .team-photo{
     content: "";
-    background-image: url("../imgs/TeamPhoto.png");
+    background-image: url("../img/TeamPhoto.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

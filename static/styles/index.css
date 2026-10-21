@@ -6,7 +6,7 @@ header {
   height: 30rem;
   background-size: cover;
   background-position: right center;
-  background-image: url(../imgs/HeaderImg.jpeg);
+  background-image: url(../img/HeaderImg.jpeg);
   align-items: center;
 }
 
@@ -110,22 +110,22 @@ main {
 }
 
 #card-img-01 {
-  background-image: url("../imgs/Products/Aquaterra\ Elite\ 750\ .png");
+  background-image: url("..//img/Products/Aquaterra\ Elite\ 750\ .png");
 }
 #card-img-02 {
-  background-image: url("../imgs/Products/AquaTerra\ Urban\ 500.png");
+  background-image: url("../img/Products/AquaTerra\ Urban\ 500.png");
 }
 #card-img-03 {
-  background-image: url("../imgs/Products/AquaTerra\ Adventure\ 1L.png");
+  background-image: url("../img/Products/AquaTerra\ Adventure\ 1L.png");
 }
 #card-img-04 {
-  background-image: url("../imgs/Products/AquaTerra\ Duo\ 600.png");
+  background-image: url("../img/Products/AquaTerra\ Duo\ 600.png");
 }
 #card-img-05 {
-  background-image: url("../imgs/Products/AquaTerra\ Kids\ 400.png");
+  background-image: url("../img/Products/AquaTerra\ Kids\ 400.png");
 }
 #card-img-06 {
-  background-image: url("../imgs/Products/AquaTerra\ FreshPack\ 12L..png");
+  background-image: url("../img/Products/AquaTerra\ FreshPack\ 12L..png");
 }
 
 .card-text {
@@ -172,10 +172,10 @@ main {
 }
 
 #img-article01 {
-  background-image: url(../imgs/Article01.jpg);
+  background-image: url(../img/Article01.jpg);
 }
 #img-article02 {
-  background-image: url(../imgs/Article02.jpg);
+  background-image: url(../img/Article02.jpg);
 }
 
 #article02{

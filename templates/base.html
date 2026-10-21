@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles/global.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon" />
+    <title>AquaTerra - Soluções Térmicas Premium</title>
+  </head>
+  <body>
+    <nav id="nav">
+        <div class="navwrapper">
+            <div class="navimg"></div>
+            <button class="navbar-toggler" id="navbarToggler"> 
+              <span></span> 
+              <span></span> 
+              <span></span> 
+            </button>
+            <div class="navbar-collapse flex" id="navbarCollapse">
+              <ul class="flex">
+                <li>
+                  <a class="navbtn active" href="/"> Início </a>
+                </li>
+                <li>
+                  <a class="navbtn" href="/contact"> Contato</a>
+              </li>
+                <li>
+                  <a class="navbtn" href="/about"> Sobre</a>
+              </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% block main %}
+
+    {% endblock %}
+
+    <footer>
+      <div class="footer-col">
+        <div class="footer-col--title">Navegação:</div>
+        <div class="">
+          <a href="./index.html">Início</a>
+        </div>
+        <div class="">
+          <a href="./contact.html">Contato</a>
+        </div>
+        <div class="">
+          <a href="./about.html">Sobre</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col--title">Contatos:</div>
+        <div class="">contato@aquaterra.com.br</div>
+        <div class="">(12) 3578-8555</div>
+        <div class="">(12) 3908-8586</div>
+      </div>
+    </footer>
+  </body>
+  <script src="../static/js/scripts.js"></script>
+</html>
